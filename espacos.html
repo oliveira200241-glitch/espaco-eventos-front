@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Explorar Espaços | EventSpace Manager</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body class="pagina-espacos">
+
+
+<header class="topo">
+
+    <a
+        href="espacos.html"
+        class="topo-logo"
+    >
+
+        <img
+            src="img/logo-eventspace.png"
+            alt="EventSpace Manager"
+        >
+
+    </a>
+
+
+    <nav class="menu">
+
+        <a
+            href="espacos.html"
+            class="menu-link menu-ativo"
+        >
+            Explorar espaços
+        </a>
+
+        <a
+            href="minhas-reservas.html"
+            class="menu-link"
+        >
+            Minhas reservas
+        </a>
+
+    </nav>
+
+
+    <div class="usuario-menu">
+
+        <div class="avatar-usuario">
+            👤
+        </div>
+
+        <div class="dados-usuario">
+
+            <span>
+                Olá,
+            </span>
+
+            <strong id="nomeUsuario">
+                Usuário
+            </strong>
+
+        </div>
+
+
+        <button
+            id="btnSair"
+            type="button"
+            class="btn-sair"
+        >
+            Sair
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<main class="conteudo-espacos">
+
+
+    <section class="hero-espacos">
+
+        <div class="hero-conteudo">
+
+            <span class="hero-tag">
+                EVENTSPACE MANAGER
+            </span>
+
+            <h1>
+                Encontre o espaço
+                <br>
+                ideal para seu evento.
+            </h1>
+
+            <p>
+                Explore espaços disponíveis,
+                veja detalhes e faça sua reserva
+                de forma simples e segura.
+            </p>
+
+        </div>
+
+
+        <div class="hero-decoration">
+
+            <div class="hero-circle hero-circle-1"></div>
+
+            <div class="hero-circle hero-circle-2"></div>
+
+            <div class="hero-card-decoration">
+
+                <span>
+                    ES
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="lista-section">
+
+
+        <div class="titulo-lista">
+
+            <div>
+
+                <span class="section-tag">
+                    CATÁLOGO
+                </span>
+
+                <h2>
+                    Espaços disponíveis
+                </h2>
+
+                <p id="contadorEspacos">
+                    Carregando espaços...
+                </p>
+
+            </div>
+
+
+            <button
+                type="button"
+                id="btnAtualizar"
+                class="btn-atualizar"
+            >
+
+                <span>
+                    ↻
+                </span>
+
+                Atualizar
+
+            </button>
+
+        </div>
+
+
+
+        <div
+            id="listaEspacos"
+            class="lista-espacos"
+        >
+
+            <div class="carregando">
+
+                <div class="spinner"></div>
+
+                <p>
+                    Carregando espaços...
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="mensagem"
+            class="mensagem"
+        ></div>
+
+
+    </section>
+
+</main>
+
+
+
+<script src="js/espacos.js"></script>
+
+</body>
+
+</html>

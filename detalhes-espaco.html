@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Detalhes do Espaço | EventSpace Manager</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body class="pagina-detalhes">
+
+
+<header class="topo">
+
+    <a
+        href="espacos.html"
+        class="topo-logo"
+    >
+
+        <img
+            src="img/logo-eventspace.png"
+            alt="EventSpace Manager"
+        >
+
+    </a>
+
+
+    <nav class="menu">
+
+        <a
+            href="espacos.html"
+            class="menu-link"
+        >
+            Explorar espaços
+        </a>
+
+        <a
+            href="minhas-reservas.html"
+            class="menu-link"
+        >
+            Minhas reservas
+        </a>
+
+    </nav>
+
+
+    <div class="usuario-menu">
+
+        <div class="avatar-usuario">
+            👤
+        </div>
+
+        <div class="dados-usuario">
+
+            <span>
+                Olá,
+            </span>
+
+            <strong id="nomeUsuario">
+                Usuário
+            </strong>
+
+        </div>
+
+
+        <button
+            id="btnSair"
+            type="button"
+            class="btn-sair"
+        >
+            Sair
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<main class="conteudo-detalhes">
+
+
+    <div class="voltar-container">
+
+        <a
+            href="espacos.html"
+            class="btn-voltar"
+        >
+            ← Voltar para espaços
+        </a>
+
+    </div>
+
+
+
+    <section
+        id="detalhesEspaco"
+        class="detalhes-layout"
+    >
+
+
+        <div class="detalhes-carregando">
+
+            <div class="spinner"></div>
+
+            <p>
+                Carregando informações do espaço...
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+    <div
+        id="mensagem"
+        class="mensagem"
+    ></div>
+
+
+</main>
+
+
+
+<script src="js/detalhes-espaco.js"></script>
+
+</body>
+
+</html>

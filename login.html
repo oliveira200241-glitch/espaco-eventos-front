@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login | EventSpace Manager</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+<body class="pagina-autenticacao">
+
+    <main class="auth-container">
+
+        <section class="auth-card">
+
+            <div class="logo-auth">
+                <img
+                    src="img/logo-eventspace.png"
+                    alt="EventSpace Manager"
+                >
+            </div>
+
+            <div class="auth-header">
+
+                <span class="auth-tag">
+                    EVENTSPACE MANAGER
+                </span>
+
+                <h1>
+                    Bem-vindo
+                </h1>
+
+                <p>
+                    Entre na sua conta para continuar
+                </p>
+
+            </div>
+
+
+            <div class="tipo-usuario">
+
+                <button
+                    type="button"
+                    id="btnCliente"
+                    class="tipo-btn ativo"
+                >
+                    <span class="tipo-icone">👤</span>
+
+                    <span>
+                        Cliente
+                    </span>
+                </button>
+
+
+                <button
+                    type="button"
+                    id="btnGestor"
+                    class="tipo-btn"
+                >
+                    <span class="tipo-icone">🏢</span>
+
+                    <span>
+                        Gestor
+                    </span>
+                </button>
+
+            </div>
+
+
+            <form id="loginForm">
+
+                <div class="campo">
+
+                    <label
+                        for="identificador"
+                        id="labelIdentificador"
+                    >
+                        E-mail
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icone">
+                            @
+                        </span>
+
+                        <input
+                            type="email"
+                            id="identificador"
+                            placeholder="seuemail@exemplo.com"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label for="senha">
+                        Senha
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="input-icone">
+                            •••
+                        </span>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            placeholder="Digite sua senha"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="opcoes-login">
+
+                    <label class="lembrar">
+
+                        <input
+                            type="checkbox"
+                            id="lembrar"
+                        >
+
+                        <span>
+                            Lembrar de mim
+                        </span>
+
+                    </label>
+
+
+                    <a href="#">
+                        Esqueci minha senha
+                    </a>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn-principal"
+                >
+
+                    <span>
+                        Entrar
+                    </span>
+
+                    <strong>
+                        →
+                    </strong>
+
+                </button>
+
+
+                <p
+                    id="mensagem"
+                    class="mensagem"
+                ></p>
+
+            </form>
+
+
+            <div class="separador">
+                <span>ou</span>
+            </div>
+
+
+            <div class="auth-footer">
+
+                <p>
+                    Ainda não possui uma conta?
+                </p>
+
+                <a href="cadastro.html">
+                    Criar uma conta
+                    <span>→</span>
+                </a>
+
+            </div>
+
+
+            <div class="auth-bottom">
+                Gestão de espaços e eventos
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

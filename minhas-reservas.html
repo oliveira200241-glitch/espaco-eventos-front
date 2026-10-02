@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Minhas Reservas | EventSpace Manager</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+</head>
+
+<body class="pagina-reservas">
+
+<header class="topo">
+
+    <a
+        href="espacos.html"
+        class="topo-logo"
+    >
+        <img
+            src="img/logo-eventspace.png"
+            alt="EventSpace Manager"
+        >
+    </a>
+
+    <nav class="menu">
+
+        <a
+            href="espacos.html"
+            class="menu-link"
+        >
+            Explorar espaços
+        </a>
+
+        <a
+            href="minhas-reservas.html"
+            class="menu-link menu-ativo"
+        >
+            Minhas reservas
+        </a>
+
+    </nav>
+
+    <div class="usuario-menu">
+
+        <div class="avatar-usuario">
+            👤
+        </div>
+
+        <div class="dados-usuario">
+
+            <span>
+                Olá,
+            </span>
+
+            <strong id="nomeUsuario">
+                Usuário
+            </strong>
+
+        </div>
+
+        <button
+            id="btnSair"
+            type="button"
+            class="btn-sair"
+        >
+            Sair
+        </button>
+
+    </div>
+
+</header>
+
+
+<main class="conteudo-reservas">
+
+    <section class="cabecalho-reservas">
+
+        <div>
+
+            <span class="section-tag">
+                EVENTSPACE MANAGER
+            </span>
+
+            <h1>
+                Minhas reservas
+            </h1>
+
+            <p>
+                Acompanhe suas reservas e consulte
+                os detalhes dos seus eventos.
+            </p>
+
+        </div>
+
+        <a
+            href="espacos.html"
+            class="btn-nova-reserva"
+        >
+            + Nova reserva
+        </a>
+
+    </section>
+
+
+    <section class="lista-reservas-section">
+
+        <div class="titulo-reservas">
+
+            <div>
+
+                <span class="section-tag">
+                    RESERVAS
+                </span>
+
+                <h2>
+                    Minhas solicitações
+                </h2>
+
+                <p id="contadorReservas">
+                    Carregando reservas...
+                </p>
+
+            </div>
+
+            <button
+                type="button"
+                id="btnAtualizarReservas"
+                class="btn-atualizar"
+            >
+                <span>↻</span>
+                Atualizar
+            </button>
+
+        </div>
+
+
+        <div
+            id="listaReservas"
+            class="lista-reservas"
+        >
+
+            <div class="carregando">
+
+                <div class="spinner"></div>
+
+                <p>
+                    Carregando suas reservas...
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="mensagem"
+            class="mensagem"
+        ></div>
+
+    </section>
+
+</main>
+
+
+<script src="js/minhas-reservas.js"></script>
+
+</body>
+
+</html>
