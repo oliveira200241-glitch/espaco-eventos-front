@@ -82,7 +82,7 @@ async function carregarReservas() {
 
         const resposta =
             await fetch(
-                `http://localhost:8080/reservas/usuario/${encodeURIComponent(usuario.id)}`,
+                `https://espaco-eventos-api.onrender.com/reservas/usuario/${encodeURIComponent(usuario.id)}`,
                 {
                     method: "GET",
 
@@ -234,7 +234,7 @@ async function mostrarReservas(reservas) {
 
                         const resposta =
                             await fetch(
-                                `http://localhost:8080/espacos/${encodeURIComponent(reserva.espacoId)}`,
+                                `https://espaco-eventos-api.onrender.com/espacos/${encodeURIComponent(reserva.espacoId)}`,
                                 {
                                     method: "GET",
 
