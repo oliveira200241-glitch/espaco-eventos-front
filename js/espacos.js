@@ -95,7 +95,7 @@ async function carregarEspacos() {
 
         const resposta =
             await fetch(
-                "http://localhost:8080/espacos",
+                "https://espaco-eventos-api.onrender.com/espacos",
                 {
 
                     method: "GET",
